@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@0;1&display=swap"); /*IBM Plex Serif*/
+
+.header {
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  margin: 5px;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  text-align: center;
+  font-family: IBM Plex Serif, serif;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+p {
+  text-align: left-justify;
+  font-family: IBM Plex Serif, serif;
+  margin: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.background {
+  background: lightGray;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+.text {
+  background: white;
+  width: 98%;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.image {
+  background: lightGray;
+  width: 97%;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+.inner-image {
+  background: lightGray;
+  width: 75%;
+  border-radius: 10px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+.x {
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#bottompic {
+  margin-top: 10px;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- Body stuff below -->
+<main class="background">
+  <h1 class="header">Design Ruminations</h1>
+  <h2 class="header">...and development follies</h2>
+  <div class="text">
+    <p></p>
+    <div class="image">
+      <p class="img"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"><img id="image" src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg" alt="CSS Grid Example"></a></p>
+      <p class="caption" id="img-caption"><em>A CSS Grid example image from CSS Tricks</em></p>
+    </div>
+    <div>
+      <h3 class="header">Coming Full . . . Table?</h3>
+      <p><a href="https://www.toptal.com/css">CSS</a> Grid is treated as an advanced feature. This is despite its having been around for almost three years now, and despite its simplicity and usefulness as a layout engine. In large part, however, CSS Grid's niche appearance seems to be due to its lack of usage in major frameworks: Bootstrap, for example, does not use CSS Grid, preferring instead to construct its own pseudo-grid with SCSS. In other words, CSS Grid today seems to be treated as a bit of advanced <em>vanilla</em> CSS that doesn't really find a place in Bootstrap-built <em>application</em> CSS environments.</p>
+
+      <p>This is a pity. In terms of structure and design, not only is CSS Grid a jewel of a layout engine, it also hearkens back to the Internet's early days, and the first layout engine ever employed in web development -- HTML Tables.</p>
+      <div class="inner-image">
+        <p><a href="https://qz.com/628955/the-dole-kemp-website-is-an-amazing-reminder-of-what-1996-was-like/" target="_blank"><img class="x img" src="https://cms.qz.com/wp-content/uploads/2016/03/screen-shot-2016-03-01-at-6-57-51-pm-e1456876737698.png" alt="Dole Kemp site"></a></p>
+        <p class="caption"><em>A screenshot of the Dole-Kemp website, from qz.com</em></p>
+      </div>
+      <p>The first Web browser to find popular appeal was Mosaic in 1992. This would be followed by Netscape Navigator in 1995. During its peak in the late 1990s, Navigator introduced millions worldwide to the Web, but, at the time, the only design tools widely available were those HTML itself offered. It did not take developers long to realize that application-level HTML pages were a maintenance nightmare, with the same standards needing to be hand-coded again and again within the document ... and that HTML seriously lacked tools as a layout engine.</p>
+
+      <p>By the late 1990s, as Internet Explorer was gaining market share over Netscape Navigator, web-design pioneers made a key discovery: HTML tables could be hacked to construct the first modern web pages. While we might look at <a href="http://www.dolekemp96.org/">Bob Dole's 1996 campaign website</a> (he lost) as a period relic today, back when it was released in 1996, it was revolutionary. Its creators made use of Microsoft FrontPage, a WYSIWYG layout editor that was only just becoming popular along with early versions of Internet Explorer, and in its source code, we find ... tables. Loads and loads of tables.</p>
+      <div class="inner-image">
+        <p><a href="https://www.flickr.com/photos/188861786@N07/50070840217/in/dateposted-public/" target="_blank"><img class="x img" src="https://live.staticflickr.com/65535/50070840217_54edcc0673_z.jpg" alt="Dole Kemp Source Code"></a></p>
+        <p class="caption"><em>The Dole-Kemp page's source code. Note the lack of CSS and JavaScript (both specifications were new at the time), the use of HTML &lt;tr&gt; and &lt;td&gt; elements setting tables, and that the code was written on FrontPage 6.</em></p>
+      </div>
+      <p>Soon, the use of tables utterly <em>dominated</em> the world of Internet design. By the early 2000s, the vast majority of the web was laid out with HTML tables. This, however, did not sit well in some circles, who viewed such widespread use of tables for clearly non-tabular purposes as a gross misuse of the tool. However, by the mid-2000s, with screens getting bigger and browsers getting faster, that classic early-2000s HTML tables-driven look had become passé and dated. Even so, neither HTML nor CSS offered anything close to a reasonable design engine at the time. Web designers began to experiment with CSS hacks like floats and absolute positioning, and designers with preprocessor experience began to build the progenitors of Bootstrap "grid's" columnular layout engine.</p>
+
+      <p>However, there was a baby in the bathwater, and this baby would be expressed in CSS Grid. The reason HTML tables were such an effective design tool in their day is because a table is, fundamentally, a <em>grid</em>. At its heart, CSS Grid works by creating, on the parent element, a table that daughter cells can nest in. It does this more powerfully and agilely than HTML tables ever could, too.</p>
+      <div class="inner-image">
+        <p><a href="https://www.flickr.com/photos/188861786@N07/50070907367/in/dateposted-public/" target="_blank"><img class="x img" src="https://live.staticflickr.com/65535/50070907367_2d9a0f8221_z.jpg" alt="CSS Grid Nesting"></a></p>
+        <p class="caption"><em>An example of CSS Grid nesting. Note that objects E, F, and G are a subgrid inside object D.</em></p>
+      </div>
+      <p>When I built <a href="https://codepen.io/steve-stofka/full/ExPwrVQ">my drum kit</a>, and when I built <a href="https://codepen.io/steve-stofka/full/yLeXobM">my random quote generator</a>, I used CSS Grid extensively. And why not? It is a fully two-dimensional layout engine. Not only can I set items in the grid, I can use media queries to reset the grid itself at breakpoints in order to yield a fully responsive web app. I can even set grids <em>inside</em> of other grids in order to construct more advanced design schemata. (Indeed, my drum kit employs such a thing extensively.)</p>
+
+      <p>Grids can be hard to pull off for a CSS novice who hasn't yet mastered how to stretch boxes out to the dimensions they need to be. Their learning curve is certainly steeper than Flexbox's. That said, calling CSS Grid "advanced" oversells its difficulty. At the end of the day, CSS Grid, like Flexbox, is simple, powerful, and intuitive. It is for us, today, what HTML tables were like for the web design pioneers of the mid-1990s: a tool that can change how we think about the very webpages and web apps we design, and design them to be simpler, cleaner, neater, and more maintainable.</p>
+      <div class="image">
+        <p class="img"><a href="https://codepen.io/steve-stofka/full/ExPwrVQ" target="_blank"><img id="bottompic" src="https://live.staticflickr.com/65535/50067527231_a368d666d6_z.jpg" alt="CSS Grid Example"></a></p>
+        <p class="caption"><em>My drum kit app, viewable on CodePen.</em></p>
+      </div>
+    </div>
+  </div>
+</main>
